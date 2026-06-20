@@ -37,7 +37,6 @@ workflows:
       vars:
         EXPO_TOKEN: VdLP51POLFCIN8Aw8c-zF4NFtlySNecaSECmueKQ
         EXPO_APPLE_APP_SPECIFIC_PASSWORD: dsyz-moyc-pstl-npba
-        APPLE_ID: nconte1622@gmail.com
         IPA_URL: https://api.codemagic.io/artifacts/04c22421-b7ab-4c99-a869-118659ae4dd9/512dc8a7-44ed-4b16-8bdd-5cab7c8252ed/ember.ipa
     scripts:
       - name: Install EAS CLI
@@ -48,15 +47,9 @@ workflows:
         script: |
           curl -L -o /tmp/ember.ipa "$IPA_URL" -H "x-auth-token: $CM_API_TOKEN"
           ls -la /tmp/ember.ipa
-      - name: Submit to TestFlight via altool
+      - name: Submit to TestFlight
         script: |
-          xcrun altool --upload-app \
-            -f /tmp/ember.ipa \
-            -t ios \
-            -u "nconte1622@gmail.com" \
-            -p "dsyz-moyc-pstl-npba" \
-            --verbose 2>&1 || true
-          echo "--- altool exit: $?"
+          eas submit --platform ios --profile production --path /tmp/ember.ipa --non-interactive
     publishing:
       email:
         recipients:
