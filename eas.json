@@ -5,7 +5,6 @@
   },
   "build": {
     "production": {
-      "image": "macos-sequoia-15.5-xcode-16.4",
       "ios": {
         "credentialsSource": "remote",
         "autoIncrement": "buildNumber"
