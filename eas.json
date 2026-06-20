@@ -15,7 +15,8 @@
     "production": {
       "ios": {
         "appleId": "nconte1622@gmail.com",
-        "appleTeamId": "P7N677SK5K"
+        "appleTeamId": "P7N677SK5K",
+        "ascAppId": "6782436145"
       }
     }
   }
