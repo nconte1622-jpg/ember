@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Ember",
+    "slug": "ember",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "ember",
+    "splash": {
+      "backgroundColor": "#FAF6F0",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.nconte.ember",
+      "buildNumber": "3",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FAF6F0"
+      }
+    },
+    "plugins": [
+      "expo-font",
+      "expo-sqlite"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "dc284678-e327-4d50-bf9d-9a76ace1e6a1"
+      }
+    }
+  }
+}
