@@ -8,7 +8,7 @@ workflows:
       node: 22.14.0
       vars:
         EXPO_TOKEN: VdLP51POLFCIN8Aw8c-zF4NFtlySNecaSECmueKQ
-        EXPO_APPLE_APP_SPECIFIC_PASSWORD: dsyz-moyc-pstl-npba
+        EXPO_APPLE_APP_SPECIFIC_PASSWORD: twai-kboj-acio-xtza
         APPLE_ID: nconte1622@gmail.com
         APPLE_TEAM_ID: P7N677SK5K
     scripts:
@@ -36,7 +36,7 @@ workflows:
       node: 22.14.0
       vars:
         EXPO_TOKEN: VdLP51POLFCIN8Aw8c-zF4NFtlySNecaSECmueKQ
-        EXPO_APPLE_APP_SPECIFIC_PASSWORD: dsyz-moyc-pstl-npba
+        EXPO_APPLE_APP_SPECIFIC_PASSWORD: twai-kboj-acio-xtza
         IPA_URL: https://api.codemagic.io/artifacts/04c22421-b7ab-4c99-a869-118659ae4dd9/512dc8a7-44ed-4b16-8bdd-5cab7c8252ed/ember.ipa
     scripts:
       - name: Install EAS CLI
